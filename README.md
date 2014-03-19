@@ -8,7 +8,8 @@ Distributed under the Lesser GNU Public License, LGPL, version 3.0.
 
 The repository currently contain the following sample applications:
 
-* Windows Phone 8 adaptation of the image stitching sample application in [this CodeProject article](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
+* Windows Phone 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
+* Windows Phone 8 adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
 
 
 Notes on commercial use

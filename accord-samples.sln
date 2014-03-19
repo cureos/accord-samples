@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panorama.Phone", "Sources\Panorama.Phone\Panorama.Phone.csproj", "{C5B5FEDA-CC85-497A-85FA-0BCE614516EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Phone", "Sources\FaceDetection.Phone\FaceDetection.Phone.csproj", "{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,24 @@ Global
 		{C5B5FEDA-CC85-497A-85FA-0BCE614516EB}.Release|x86.ActiveCfg = Release|x86
 		{C5B5FEDA-CC85-497A-85FA-0BCE614516EB}.Release|x86.Build.0 = Release|x86
 		{C5B5FEDA-CC85-497A-85FA-0BCE614516EB}.Release|x86.Deploy.0 = Release|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|ARM.Build.0 = Debug|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|ARM.Deploy.0 = Debug|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|x86.ActiveCfg = Debug|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|x86.Build.0 = Debug|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Debug|x86.Deploy.0 = Debug|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|ARM.ActiveCfg = Release|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|ARM.Build.0 = Release|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|ARM.Deploy.0 = Release|ARM
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|x86.ActiveCfg = Release|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|x86.Build.0 = Release|x86
+		{CFF53095-F9EF-4DFD-A53E-6078B4D42B63}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
