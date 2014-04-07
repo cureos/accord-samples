@@ -15,7 +15,7 @@ The repository currently contain the following sample applications:
 Notes on commercial use
 -----------------------
 
-The *Shim.System* and *Shim.System.Drawing* assemblies that are required to build the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
+The *Shim* and *Shim.Drawing* assemblies that are required to build the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
 For those interested in using the Portable *Accord.NET* and *AForge.NET* libraries without having to adhere to GPL, please contact the copyright holder of the *Shim* assemblies at
 
 licenses@cureos.com
