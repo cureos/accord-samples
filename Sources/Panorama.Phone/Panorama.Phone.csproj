@@ -186,13 +186,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Externals\PCL\Any CPU\AForge.Math.dll</HintPath>
     </Reference>
-    <Reference Include="Shim.System, Version=1.0.0.0, Culture=neutral, PublicKeyToken=234f4008e59fda5b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.System.dll</HintPath>
+    <Reference Include="Shim">
+      <HintPath>..\..\Externals\Phone\Any CPU\Shim.dll</HintPath>
     </Reference>
-    <Reference Include="Shim.System.Drawing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=48b3cf0da28af6d5, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.System.Drawing.dll</HintPath>
+    <Reference Include="Shim.Drawing">
+      <HintPath>..\..\Externals\Phone\Any CPU\Shim.Drawing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />

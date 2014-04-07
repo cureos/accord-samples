@@ -184,11 +184,11 @@
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="Shim.System">
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.System.dll</HintPath>
+    <Reference Include="Shim">
+      <HintPath>..\..\Externals\Phone\Any CPU\Shim.dll</HintPath>
     </Reference>
-    <Reference Include="Shim.System.Drawing">
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.System.Drawing.dll</HintPath>
+    <Reference Include="Shim.Drawing">
+      <HintPath>..\..\Externals\Phone\Any CPU\Shim.Drawing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
