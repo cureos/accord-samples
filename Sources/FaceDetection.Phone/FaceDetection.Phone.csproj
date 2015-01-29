@@ -160,35 +160,55 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Accord">
-      <HintPath>..\..\Externals\PCL\Any CPU\Accord.dll</HintPath>
+    <Reference Include="Accord, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.core.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.dll</HintPath>
     </Reference>
-    <Reference Include="Accord.Imaging">
-      <HintPath>..\..\Externals\PCL\Any CPU\Accord.Imaging.dll</HintPath>
+    <Reference Include="Accord.Imaging, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.imaging.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.Imaging.dll</HintPath>
     </Reference>
-    <Reference Include="Accord.Math">
-      <HintPath>..\..\Externals\PCL\Any CPU\Accord.Math.dll</HintPath>
+    <Reference Include="Accord.MachineLearning, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.machinelearning.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.MachineLearning.dll</HintPath>
     </Reference>
-    <Reference Include="Accord.Vision">
-      <HintPath>..\..\Externals\PCL\Any CPU\Accord.Vision.dll</HintPath>
+    <Reference Include="Accord.Math, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.math.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.Math.dll</HintPath>
     </Reference>
-    <Reference Include="AForge">
-      <HintPath>..\..\Externals\PCL\Any CPU\AForge.dll</HintPath>
+    <Reference Include="Accord.Statistics, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.statistics.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Vision, Version=2.14.1.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.accord.vision.2.14.0.50126\lib\portable-net45+netcore45+wpa81+wp8\Accord.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.aforge.core.2.2.5.50126\lib\portable-net45+netcore45+wpa81+wp8\AForge.dll</HintPath>
     </Reference>
     <Reference Include="AForge.Imaging">
-      <HintPath>..\..\Externals\PCL\Any CPU\AForge.Imaging.dll</HintPath>
+      <HintPath>..\..\packages\portable.aforge.imaging.2.2.5.50126\lib\portable-net45+netcore45+wpa81+wp8\AForge.Imaging.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="AForge.Math">
-      <HintPath>..\..\Externals\PCL\Any CPU\AForge.Math.dll</HintPath>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\portable.aforge.math.2.2.5.50126\lib\portable-net45+netcore45+wpa81+wp8\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision">
+      <HintPath>..\..\packages\portable.aforge.vision.2.2.5.50126\lib\portable-net45+netcore45+wpa81+wp8\AForge.Vision.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="Shim">
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.dll</HintPath>
+    <Reference Include="Shim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\shim.1.0.0.50126\lib\wp8\Shim.dll</HintPath>
     </Reference>
-    <Reference Include="Shim.Drawing">
-      <HintPath>..\..\Externals\Phone\Any CPU\Shim.Drawing.dll</HintPath>
+    <Reference Include="Shim.Drawing, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a7d03c0bc8d64dbc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\shim.drawing.2.2.5.50126\lib\wp8\Shim.Drawing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
