@@ -3,20 +3,20 @@
 Portable Accord.NET Samples
 ===========================
 
-Copyright (c) 2009-2014 César Roberto de Souza; Portable Class Library, WPF, Windows Store and Windows Phone adaptations (c) 2013-2104 Anders Gustafsson, Cureos AB. 
+Copyright (c) 2009-2015 César Roberto de Souza; Portable Class Library, WPF, Windows Store and Windows Phone adaptations (c) 2013-2015 Anders Gustafsson, Cureos AB. 
 Distributed under the Lesser GNU Public License, LGPL, version 3.0.
 
 The repository currently contain the following sample applications:
 
-* Windows Phone 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
-* Windows Phone 8 adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
+* Windows Phone Silverlight 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
+* Xamarin Forms adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
 
 
 Notes on commercial use
 -----------------------
 
-The *Shim* and *Shim.Drawing* assemblies that are required to build the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
-For those interested in using the Portable *Accord.NET* and *AForge.NET* libraries without having to adhere to GPL, please contact the copyright holder of the *Shim* assemblies at
+The *Shim.Drawing* assemblies that are required to run the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
+For those interested in using the Portable *Accord.NET* and *AForge.NET* libraries without having to adhere to GPL, please contact the copyright holder of the *Shim.Drawing* assemblies at
 
 licenses@cureos.com
 
