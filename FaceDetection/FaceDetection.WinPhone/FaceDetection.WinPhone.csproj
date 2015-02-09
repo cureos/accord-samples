@@ -179,7 +179,7 @@
     </Reference>
     <Reference Include="Shim.Drawing, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a7d03c0bc8d64dbc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\shim.drawing.2.2.5.50204\lib\wp8\Shim.Drawing.dll</HintPath>
+      <HintPath>..\..\packages\shim.drawing.2.2.5.50209\lib\wp8\Shim.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.2.6316\lib\WP80\Xamarin.Forms.Core.dll</HintPath>

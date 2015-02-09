@@ -130,7 +130,7 @@
     </Reference>
     <Reference Include="Shim.Drawing, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a7d03c0bc8d64dbc, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\shim.drawing.2.2.5.50204\lib\Xamarin.iOS10\Shim.Drawing.dll</HintPath>
+      <HintPath>..\..\packages\shim.drawing.2.2.5.50209\lib\Xamarin.iOS10\Shim.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
