@@ -75,7 +75,8 @@
       <HintPath>..\..\packages\portable.aforge.vision.2.2.5.50204\lib\portable-net45+netcore45+wpa81+wp8\AForge.Vision.dll</HintPath>
     </Reference>
     <Reference Include="Shim">
-      <HintPath>..\..\packages\shim.1.0.1.50204\lib\portable-net45+netcore45+wpa81+wp8\Shim.dll</HintPath>
+      <HintPath>..\..\packages\shim.1.0.1.50208\lib\portable-net45+netcore45+wpa81+wp8\Shim.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Shim.Drawing">
       <HintPath>..\..\packages\shim.drawing.2.2.5.50204\lib\portable-net45+netcore45+wpa81+wp8\Shim.Drawing.dll</HintPath>
