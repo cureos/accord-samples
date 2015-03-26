@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="TransformsPrompt">Select transform</string>
+  <string-array name="Transforms">
+    <item>Haar</item>
+    <item>CDF9/7</item>
+  </string-array>
+  <string name="Iterations">Iterations =</string>
+  <string name="Forward">Forward</string>
+  <string name="Backward">Backward</string>
+  <string name="Original">Original</string>
+  <string name="ApplicationName">Wavelets Transform</string>
+</resources>
