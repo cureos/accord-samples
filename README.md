@@ -1,4 +1,4 @@
-![The Accord.NET Framework](http://accord-framework.net/docs/icons/logo.png)
+![Portable Accord.NET Framework](https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png)
 
 Portable Accord.NET Samples
 ===========================
@@ -10,6 +10,9 @@ The repository currently contain the following sample applications:
 
 * Windows Phone Silverlight 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
 * Xamarin Forms adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
+* Windows 8.1 adaptation of the *Corners detection (SURF)* sample
+* Windows Phone 8.1 adaptation of the *Clustering (Gaussian Mixture Models)* sample
+* .NET WPF adaptation of the *Denavit-Hartenberg Kinematics* sample
 
 
 Notes on commercial use
