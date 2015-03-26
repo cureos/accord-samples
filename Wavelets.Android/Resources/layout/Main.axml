@@ -6,29 +6,35 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="5"
         android:id="@+id/TransformImage" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:prompt="@string/TransformsPrompt"
+        android:layout_weight="1"
         android:id="@+id/TransformSpinner" />
     <NumberPicker
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:id="@+id/IterationsPicker" />
     <Button
         android:id="@+id/ForwardButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="@string/Forward" />
     <Button
         android:id="@+id/BackwardButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="@string/Backward" />
     <Button
         android:id="@+id/OriginalButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="@string/Original" />
 </LinearLayout>

@@ -14,10 +14,14 @@ namespace Wavelets
     using Accord.Imaging.Filters;
     using Accord.Math.Wavelets;
 
+    using AForge.Imaging.Filters;
+
     using Android.App;
     using Android.Graphics;
     using Android.OS;
     using Android.Widget;
+
+    using PixelFormat = System.Drawing.Imaging.PixelFormat;
 
     /// <summary>
     /// </summary>
@@ -26,9 +30,9 @@ namespace Wavelets
     {
         private IWavelet wavelet;
 
-        private Bitmap lenna;
+        private System.Drawing.Bitmap lenna;
 
-        private Bitmap transformed;
+        private System.Drawing.Bitmap transformed;
 
         private ImageView transformImage;
 
@@ -48,10 +52,12 @@ namespace Wavelets
             this.SetContentView(Resource.Layout.Main);
 
             // Load image
-            this.lenna = BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.lena512);
+            var filters = new FiltersSequence(Grayscale.CommonAlgorithms.BT709, new ResizeBicubic(512, 512));
+            var tmp = (System.Drawing.Bitmap)BitmapFactory.DecodeResource(this.Resources, Resource.Drawable.lena512);
+            this.lenna = filters.Apply(tmp.Clone(PixelFormat.Format32bppArgb));
 
             this.transformImage = this.FindViewById<ImageView>(Resource.Id.TransformImage);
-            this.transformImage.SetImageBitmap(this.lenna);
+            this.transformImage.SetImageBitmap((Android.Graphics.Bitmap)this.lenna);
 
             // Populate the transforms spinner
             this.transformsSpinner = this.FindViewById<Spinner>(Resource.Id.TransformSpinner);
@@ -96,9 +102,9 @@ namespace Wavelets
             var wt = new WaveletTransform(this.wavelet);
 
             // Apply forward transform
-            this.transformed = (Android.Graphics.Bitmap)wt.Apply((System.Drawing.Bitmap)this.lenna);
+            this.transformed = wt.Apply(this.lenna);
 
-            this.transformImage.SetImageBitmap(this.transformed);
+            this.transformImage.SetImageBitmap((Android.Graphics.Bitmap)this.transformed);
         }
 
         private void BackwardButtonOnClick(object sender, EventArgs eventArgs)
@@ -107,12 +113,12 @@ namespace Wavelets
             var wt = new WaveletTransform(this.wavelet, true);
 
             // Apply inverse transform
-            this.transformImage.SetImageBitmap((Android.Graphics.Bitmap)wt.Apply((System.Drawing.Bitmap)this.transformed));
+            this.transformImage.SetImageBitmap((Android.Graphics.Bitmap)wt.Apply(this.transformed));
         }
 
         private void OriginalButtonOnClick(object sender, EventArgs eventArgs)
         {
-            this.transformImage.SetImageBitmap(this.lenna);
+            this.transformImage.SetImageBitmap((Android.Graphics.Bitmap)this.lenna);
         }
     }
 }
