@@ -3,7 +3,7 @@
   <string name="TransformsPrompt">Transform:</string>
   <string-array name="Transforms">
     <item>Haar</item>
-    <item>CDF9/7</item>
+    <item>CDF 9/7</item>
   </string-array>
   <string name="IterationsPrompt">Iterations:</string>
   <string-array name="Iterations">

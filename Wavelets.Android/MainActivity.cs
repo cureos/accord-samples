@@ -93,14 +93,14 @@ namespace Wavelets
         private void ForwardButtonOnClick(object sender, System.EventArgs e)
         {
             var selectedTransform = (string)this.transformsSpinner.SelectedItem;
-            var numIterations = Convert.ToInt32(this.iterationsSpinner.SelectedItem);
+            var numIterations = Convert.ToInt32((string)this.iterationsSpinner.SelectedItem);
             if (selectedTransform == "Haar")
             {
                 this.wavelet = new Haar(numIterations);
             }
             else
             {
-                this.wavelet = new CDF97((int)numIterations);
+                this.wavelet = new CDF97(numIterations);
             }
 
             // Create forward transform
