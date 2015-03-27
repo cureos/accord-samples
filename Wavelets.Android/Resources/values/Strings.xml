@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="TransformsPrompt">Select transform</string>
+  <string name="TransformsPrompt">Transform:</string>
   <string-array name="Transforms">
     <item>Haar</item>
     <item>CDF9/7</item>
   </string-array>
-  <string name="Iterations">Iterations =</string>
+  <string name="IterationsPrompt">Iterations:</string>
+  <string-array name="Iterations">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+  </string-array>
   <string name="Forward">Forward</string>
   <string name="Backward">Backward</string>
   <string name="Original">Original</string>

@@ -36,9 +36,9 @@ namespace Wavelets
 
         private ImageView transformImage;
 
-        private NumberPicker iterationsPicker;
-
         private Spinner transformsSpinner;
+
+        private Spinner iterationsSpinner;
 
         /// <summary>
         /// </summary>
@@ -69,10 +69,15 @@ namespace Wavelets
             transformsAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             this.transformsSpinner.Adapter = transformsAdapter;
 
-            // Configure the iterations picker
-            this.iterationsPicker = this.FindViewById<NumberPicker>(Resource.Id.IterationsPicker);
-            this.iterationsPicker.MinValue = 1;
-            this.iterationsPicker.MaxValue = 5;
+            // Configure the iterations spinner
+            this.iterationsSpinner = this.FindViewById<Spinner>(Resource.Id.IterationsSpinner);
+
+            var iterationsAdapter = ArrayAdapter.CreateFromResource(
+                this,
+                Resource.Array.Iterations,
+                Android.Resource.Layout.SimpleSpinnerItem);
+            iterationsAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            this.iterationsSpinner.Adapter = iterationsAdapter;
 
             // Define click handlers
             var forwardButton = this.FindViewById<Button>(Resource.Id.ForwardButton);
@@ -88,7 +93,7 @@ namespace Wavelets
         private void ForwardButtonOnClick(object sender, System.EventArgs e)
         {
             var selectedTransform = (string)this.transformsSpinner.SelectedItem;
-            var numIterations = this.iterationsPicker.Value;
+            var numIterations = Convert.ToInt32(this.iterationsSpinner.SelectedItem);
             if (selectedTransform == "Haar")
             {
                 this.wavelet = new Haar(numIterations);
