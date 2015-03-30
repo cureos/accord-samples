@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AForge.Imaging.IPPrototyper</name>
+    </assembly>
+    <members>
+        <member name="T:AForge.Imaging.IPPrototyper.IImageProcessingLog">
+            <summary>
+            Interface for image processing loggers, which keep information about image
+            processing steps.
+            </summary>
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.IImageProcessingLog.AddImage(System.String,System.Drawing.Bitmap)">
+            <summary>
+            Add new image to the log.
+            </summary>
+            
+            <param name="key">Key/name of the image (image processing step).</param>
+            <param name="image">Image to add to the log.</param>
+            
+            <remarks><para>Adds new image to the image processing log or replaces existing
+            image if specified key already exists in the log.</para></remarks>
+            
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.IImageProcessingLog.AddMessage(System.String)">
+            <summary>
+            Add messafe to the log.
+            </summary>
+            
+            <param name="message">Message to add to the image processing log.</param>
+            
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.IImageProcessingLog.Clear">
+            <summary>
+            Clear image processing log removing all images and messages from it.
+            </summary>
+        </member>
+        <member name="T:AForge.Imaging.IPPrototyper.IImageProcessingRoutine">
+            <summary>
+            Interface to implement by image processing routine.
+            </summary>
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.IImageProcessingRoutine.Process(System.Drawing.Bitmap,AForge.Imaging.IPPrototyper.IImageProcessingLog)">
+            <summary>
+            Perform image processing routine.
+            </summary>
+            
+            <param name="image">Source image to perform image processing on.</param>
+            <param name="log">Logger to use to put information about image processing steps/results.</param>
+            
+        </member>
+        <member name="P:AForge.Imaging.IPPrototyper.IImageProcessingRoutine.Name">
+            <summary>
+            Image processing routine's name.
+            </summary>
+        </member>
+        <member name="T:AForge.Imaging.IPPrototyper.ImageProcessingLog">
+            <summary>
+            Default implementation of <see cref="T:AForge.Imaging.IPPrototyper.IImageProcessingLog"/> interface.
+            </summary>
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.ImageProcessingLog.Clear">
+            <summary>
+            Clear image processing log removing all images and messages from it.
+            </summary>
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.ImageProcessingLog.AddImage(System.String,System.Drawing.Bitmap)">
+            <summary>
+            Add new image to the log.
+            </summary>
+            
+            <param name="key">Key/name of the image (image processing step).</param>
+            <param name="image">Image to add to the log.</param>
+            
+            <remarks><para>Adds new image to the image processing log or replaces existing
+            image if specified key already exists in the log.</para></remarks>
+            
+        </member>
+        <member name="M:AForge.Imaging.IPPrototyper.ImageProcessingLog.AddMessage(System.String)">
+             <summary>
+             Add messafe to the log.
+             </summary>
+             
+             <param name="message">Message to add to the image processing log.</param>
+            
+        </member>
+        <member name="P:AForge.Imaging.IPPrototyper.ImageProcessingLog.Images">
+            <summary>
+             Collection of images representing image processing steps.
+            </summary>
+        </member>
+        <member name="P:AForge.Imaging.IPPrototyper.ImageProcessingLog.Messages">
+            <summary>
+            List of messages stored in the log.
+            </summary>
+        </member>
+    </members>
+</doc>
