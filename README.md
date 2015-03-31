@@ -1,6 +1,15 @@
-![Portable Accord.NET Framework](https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png)
+<table border="0">
+<tr>
+<td>
+<img src="https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png" alt="Portable Accord.NET logo" height="108" />
+</td>
+<td>
+<img src="https://github.com/cureos/aforge/raw/master/Setup/Portable/NuGet/portable-aforge.png" alt="Portable AForge.NET logo" height="108" />
+</td>
+</tr>
+</table>
 
-# Portable Accord.NET Samples
+# Portable Accord and AForge Samples
 
 Copyright (c) 2009-2015 César Roberto de Souza (Accord.NET samples) and (c) 2010-2012 Andrew Kirillow (glyph recognition sample); adaptations to non-.NET platforms (c) 2013-2015 Anders Gustafsson, Cureos AB.  
 Distributed under the Lesser GNU Public License, LGPL, version 3.0 (Accord.NET samples) or GNU Public License, GPL, version 3.0 (glyph recognition sample).
@@ -62,7 +71,7 @@ Windows 8.1 adaptation of the glyph recognition prototype in Andrew Kirillow's [
 The *Shim.Drawing* assemblies that are required to build the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
 
 There are *Shim* and *Shim.Drawing* assemblies available for *Xamarin.Android* and *Xamarin.iOS*, making it possible to 
-incorporate *Portable AForge* and *Portable Accord* assemblies in *Android* and *iPhone* or *iPad* apps. See for example [this](http://cureos.blogspot.com/2014/10/smartphone-image-processing-development.html) blog post. 
+incorporate *Portable AForge* and *Portable Accord* assemblies in *Android* and *iPhone* or *iPad* apps.
 
 *Shim Drawing* is available for evaluation from *NuGet* for all supported platforms.
 
