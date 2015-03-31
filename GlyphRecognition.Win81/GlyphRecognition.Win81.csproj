@@ -150,6 +150,7 @@
   <ItemGroup>
     <Reference Include="AForge">
       <HintPath>..\packages\portable.aforge.core.2.2.5.50205\lib\portable-win81+wpa81\AForge.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AForge.Imaging">
       <HintPath>..\packages\portable.aforge.imaging.2.2.5.50204\lib\portable-net45+netcore45+wpa81+wp8\AForge.Imaging.dll</HintPath>
@@ -176,10 +177,10 @@
       <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.0\lib\win81\Cirrious.MvvmCross.WindowsCommon.dll</HintPath>
     </Reference>
     <Reference Include="Shim">
-      <HintPath>..\packages\shim.1.0.1.50208\lib\netcore45\Shim.dll</HintPath>
+      <HintPath>..\packages\shim.1.0.1.50318\lib\netcore451\Shim.dll</HintPath>
     </Reference>
     <Reference Include="Shim.Drawing">
-      <HintPath>..\packages\shim.drawing.2.2.5.50209\lib\portable-win81+wpa81\Shim.Drawing.dll</HintPath>
+      <HintPath>..\packages\shim.drawing.2.2.5.50331\lib\portable-win81+wpa81\Shim.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="WriteableBitmapEx.WinRT">
       <HintPath>..\packages\WriteableBitmapEx.1.0.14.0\lib\NetCore45\WriteableBitmapEx.WinRT.dll</HintPath>

@@ -13,6 +13,9 @@
         <Style TargetType="ListBox">
             <Setter Property="Margin" Value="6,0,6,6"></Setter>
         </Style>
+        <Style TargetType="ScrollViewer">
+            <Setter Property="Margin" Value="6"></Setter>
+        </Style>
     </views:MvxWindowsPage.Resources>
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -43,13 +46,13 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                         <Image Width="80" Source="{Binding Value, Converter={StaticResource BitmapToImageSourceConverter}}"/>
-                        <TextBlock Text="{Binding Key}"></TextBlock>
+                        <TextBlock Text="{Binding Key}" FontSize="16" Margin="6,0" VerticalAlignment="Center"></TextBlock>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
         <ScrollViewer Grid.Row="2" Grid.Column="1" VerticalScrollMode="Auto" HorizontalScrollMode="Auto" >
-            <TextBlock Text="{Binding Log}" FontSize="14"/>
+            <TextBlock Text="{Binding Log}" FontSize="16"/>
         </ScrollViewer>
     </Grid>
     <Page.BottomAppBar>
@@ -60,7 +63,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
-                    <AppBarButton Icon="Pictures" Command="{Binding LoadImagesCommand}" Label="Load images"/>
+                    <AppBarButton Icon="Pictures" Command="{Binding LoadImagesCommand}" Label="Load image folder"/>
                 </StackPanel>
             </Grid>
         </AppBar>
