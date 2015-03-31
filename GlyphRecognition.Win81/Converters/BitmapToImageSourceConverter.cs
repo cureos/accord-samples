@@ -4,15 +4,14 @@
     using System.Drawing;
 
     using Windows.UI.Xaml.Data;
-    using Windows.UI.Xaml.Media;
     using Windows.UI.Xaml.Media.Imaging;
 
-    public class BitmapToWriteableBitmapConverter : IValueConverter
+    public class BitmapToImageSourceConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (!(value is Bitmap)) return null;
-            return (ImageSource)(Bitmap)value;
+            return (WriteableBitmap)(Bitmap)value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

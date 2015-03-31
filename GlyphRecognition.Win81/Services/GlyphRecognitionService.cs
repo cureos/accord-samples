@@ -9,6 +9,7 @@
         #region FIELDS
 
         private readonly IImageProcessingRoutine current = new GlyphRecognizer();
+
         #endregion
 
         #region PROPERTIES

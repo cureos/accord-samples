@@ -118,7 +118,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\BitmapToWriteableBitmapConverter.cs" />
+    <Compile Include="Converters\BitmapToImageSourceConverter.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GlyphRecognitionService.cs" />
@@ -180,6 +180,9 @@
     </Reference>
     <Reference Include="Shim.Drawing">
       <HintPath>..\packages\shim.drawing.2.2.5.50209\lib\portable-win81+wpa81\Shim.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapEx.WinRT">
+      <HintPath>..\packages\WriteableBitmapEx.1.0.14.0\lib\NetCore45\WriteableBitmapEx.WinRT.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
