@@ -1,25 +1,63 @@
 ![Portable Accord.NET Framework](https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png)
 
-Portable Accord.NET Samples
-===========================
+# Portable Accord.NET Samples
 
 Copyright (c) 2009-2015 César Roberto de Souza (Accord.NET samples) and (c) 2010-2012 Andrew Kirillow (glyph recognition sample); adaptations to non-.NET platforms (c) 2013-2015 Anders Gustafsson, Cureos AB.  
 Distributed under the Lesser GNU Public License, LGPL, version 3.0 (Accord.NET samples) or GNU Public License, GPL, version 3.0 (glyph recognition sample).
 
-The repository currently contain the following sample applications:
+## Sample applications
 
-* Windows Phone Silverlight 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
-* Xamarin Forms adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
-* Windows 8.1 adaptation of the *Corners detection (SURF)* sample
-* Windows Phone 8.1 adaptation of the *Clustering (Gaussian Mixture Models)* sample
-* .NET WPF adaptation of the *Denavit-Hartenberg Kinematics* sample
-* Android adaptation of the *Wavelets Transform* sample.
-* Windows 8.1 adaptation of the glyph recognition prototype in Andrew Kirillow's [GRATF](http://www.aforgenet.com/projects/gratf/) project, including a PCL/Windows 8.1 adaptation of the Image Processing Prototyper application from the *AForge.NET Framework*.
+### Image stitching
+
+Windows Phone Silverlight 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
+
+![Image stitching sample](/Files/panorama.png)
+
+### Face detection
+
+*Xamarin Forms* adaptation of César's [face detection sample application on CodeProject](http://www.codeproject.com/Articles/441226/Haar-feature-Object-Detection-in-Csharp).
+
+Apps for these platforms:
+
+* Android
+* iOS
+* Windows Phone 8 Silverlight
+* Windows 8.1
+* Windows Phone 8.1 (non-Silverlight)
+
+The Windows 8.1 and Windows Phone 8.1 apps are relying on the pre-alpha release of Xamarin Forms for Windows and are currently not fully functional.
+
+![Face detection sample](http://3.bp.blogspot.com/-fNN4Vl_muJo/VEgYN32B1II/AAAAAAAAAI4/fXIp5fmEVbo/s1600/facedetection.png)
+
+### Corners detection
+
+Windows 8.1 adaptation of the *Corners detection (SURF)* sample from Accord.NET.
+
+![Corners detection sample](/Files/corners.png)
+
+### Clustering
+
+Windows Phone 8.1 adaptation of the *Clustering (Gaussian Mixture Models)* sample from Accord.NET.
+
+![Clustering sample](/Files/clustering.png)
+
+### Kinematics
+
+.NET WPF adaptation of the *Denavit-Hartenberg Kinematics* sample from Accord.NET.
+
+![Kinematics sample](/Files/kinematics.png)
+
+### Wavelets
+
+Android adaptation of the *Wavelets Transform*  from Accord.NET.
+
+### Glyph recognition
+
+Windows 8.1 adaptation of the glyph recognition prototype in Andrew Kirillow's [GRATF](http://www.aforgenet.com/projects/gratf/) project, including a PCL/Windows 8.1 adaptation of the Image Processing Prototyper application from the *AForge.NET Framework*.
 
 ![Glyph recognition sample](/Files/glyph.png)
 
-Notes on commercial use
------------------------
+## Notes on commercial use
 
 The *Shim.Drawing* assemblies that are required to build the Portable Class Library versions of *AForge.NET Framework* and *Accord.NET Framework* are published under the General Public License, version 3.
 
