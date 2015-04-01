@@ -1,8 +1,17 @@
+<style>
+table { 
+	border: 0px
+}
+.wid50px {
+	width: 50px
+}
+</style>
 <table border="0">
 <tr>
 <td>
 <img src="https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png" alt="Portable Accord.NET logo" height="108" />
 </td>
+<td class="wid50px"/>
 <td>
 <img src="https://github.com/cureos/aforge/raw/master/Setup/Portable/NuGet/portable-aforge.png" alt="Portable AForge.NET logo" height="108" />
 </td>
@@ -60,6 +69,8 @@ Windows Phone 8.1 adaptation of the *Clustering (Gaussian Mixture Models)* sampl
 
 Android adaptation of the *Wavelets Transform*  from Accord.NET.
 
+![Wavelets sample](/Files/wavelets.png)
+
 ### Glyph recognition
 
 Windows 8.1 adaptation of the glyph recognition prototype in Andrew Kirillow's [GRATF](http://www.aforgenet.com/projects/gratf/) project, including a PCL/Windows 8.1 adaptation of the Image Processing Prototyper application from the *AForge.NET Framework*.
@@ -90,6 +101,8 @@ To purchase a commercial license of *Shim.Drawing* for *Android*, *iOS* or *Univ
 <td><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UU5XKDER4JFQ4"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif"/></a></td><td><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LLK2ZYW4JV8GY"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif"/></a></td>
 </tr>
 </table>
+
+All prices include VAT. Upon purchase, you will receive a link from where you can download the corresponding versions of the *Shim.Drawing* assemblies that do not insert watermarks into the images.
 
 Please also note that *AForge.NET Framework* (on which *Accord.NET Framework* is dependent) is licensed under LGPL version 3, and the copyright holder states the following on the *AForge.NET Framework* website:
 
