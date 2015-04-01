@@ -1,17 +1,9 @@
-<style>
-table { 
-	border: 0px
-}
-.wid50px {
-	width: 50px
-}
-</style>
 <table border="0">
 <tr>
 <td>
 <img src="https://github.com/cureos/accord/raw/portable/Setup/Portable/NuGet/portable-accord.png" alt="Portable Accord.NET logo" height="108" />
 </td>
-<td class="wid50px"/>
+<td />
 <td>
 <img src="https://github.com/cureos/aforge/raw/master/Setup/Portable/NuGet/portable-aforge.png" alt="Portable AForge.NET logo" height="108" />
 </td>
