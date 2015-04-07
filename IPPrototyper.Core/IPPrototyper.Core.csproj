@@ -13,7 +13,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
@@ -47,17 +47,20 @@
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AForge">
-      <HintPath>..\packages\portable.aforge.core.2.2.5.50205\lib\portable-net45+netcore45+wpa81+wp8\AForge.dll</HintPath>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\portable.aforge.core.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="AForge.Imaging">
-      <HintPath>..\packages\portable.aforge.imaging.2.2.5.50204\lib\portable-net45+netcore45+wpa81+wp8\AForge.Imaging.dll</HintPath>
+    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
+      <HintPath>..\packages\portable.aforge.imaging.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.Imaging.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AForge.Imaging.IPPrototyper">
       <HintPath>..\Externals\AForge.Imaging.IPPrototyper\AForge.Imaging.IPPrototyper.dll</HintPath>
     </Reference>
-    <Reference Include="AForge.Math">
-      <HintPath>..\packages\portable.aforge.math.2.2.5.50204\lib\portable-net45+netcore45+wpa81+wp8\AForge.Math.dll</HintPath>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\portable.aforge.math.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.Math.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Cirrious.CrossCore">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.CrossCore.dll</HintPath>
@@ -68,11 +71,13 @@
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.0\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
-    <Reference Include="Shim">
-      <HintPath>..\packages\shim.1.0.1.50208\lib\portable-net45+netcore45+wpa81+wp8\Shim.dll</HintPath>
+    <Reference Include="Shim, Version=1.0.1.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
+      <HintPath>..\packages\shim.1.0.1.50407\lib\portable-net45+netcore45+wpa81+wp8\Shim.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Shim.Drawing">
-      <HintPath>..\packages\shim.drawing.2.2.5.50209\lib\portable-net45+netcore45+wpa81+wp8\Shim.Drawing.dll</HintPath>
+    <Reference Include="Shim.Drawing, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a7d03c0bc8d64dbc, processorArchitecture=MSIL">
+      <HintPath>..\packages\shim.drawing.2.2.5.50331\lib\portable-net45+netcore45+wpa81\Shim.Drawing.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup />
