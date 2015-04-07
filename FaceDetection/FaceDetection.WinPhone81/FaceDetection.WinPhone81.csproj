@@ -151,9 +151,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FaceDetection\FaceDetection.csproj">
+    <ProjectReference Include="..\FaceDetection\FaceDetection.Core.csproj">
       <Project>{5c057934-125b-4143-bd88-820c0884066d}</Project>
-      <Name>FaceDetection</Name>
+      <Name>FaceDetection.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">

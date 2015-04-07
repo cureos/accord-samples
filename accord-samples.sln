@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6F9C32
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection", "FaceDetection\FaceDetection\FaceDetection.csproj", "{5C057934-125B-4143-BD88-820C0884066D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.Core", "FaceDetection\FaceDetection\FaceDetection.Core.csproj", "{5C057934-125B-4143-BD88-820C0884066D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetection.iOS", "FaceDetection\FaceDetection.iOS\FaceDetection.iOS.csproj", "{E0E1A233-F816-4B67-9FA2-130550049F17}"
 EndProject

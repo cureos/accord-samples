@@ -102,8 +102,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FaceDetection\FaceDetection.csproj">
-      <Name>FaceDetection</Name>
+    <ProjectReference Include="..\FaceDetection\FaceDetection.Core.csproj">
+      <Name>FaceDetection.Core</Name>
+      <Project>{5C057934-125B-4143-BD88-820C0884066D}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
