@@ -1,11 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IImageLoaderService.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
+﻿// Copyright (c) 2014-2015 Anders Gustafsson, Cureos AB.
+// All rights reserved.
 
 namespace IPPrototyper.Core.Services
 {
@@ -13,14 +7,14 @@ namespace IPPrototyper.Core.Services
     using System.Drawing;
     using System.Threading.Tasks;
 
-    /// <summary>
-    /// </summary>
     public interface IImageLoaderService
     {
-        /// <summary>
-        /// </summary>
-        /// <returns>
-        /// </returns>
+        #region METHODS
+
         Task<IEnumerable<Bitmap>> LoadImagesAsync();
+
+        Task<Bitmap> CaptureImageAsync();
+
+        #endregion
     }
 }

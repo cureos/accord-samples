@@ -1,8 +1,8 @@
+// Copyright (c) 2014-2015 Anders Gustafsson, Cureos AB.
+// All rights reserved.
+
 namespace GlyphRecognition
 {
-    using System.Linq;
-    using System.Reflection;
-
     using Windows.UI.Xaml.Controls;
 
     using Cirrious.CrossCore;

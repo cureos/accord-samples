@@ -1,11 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ImageLoaderService.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
+﻿// Copyright (c) 2014-2015 Anders Gustafsson, Cureos AB.
+// All rights reserved.
 
 namespace GlyphRecognition.Services
 {
@@ -20,14 +14,10 @@ namespace GlyphRecognition.Services
     using Windows.Storage.Pickers;
     using Windows.UI.Xaml.Media.Imaging;
 
-    /// <summary>
-    /// </summary>
     public class ImageLoaderService : IImageLoaderService
     {
-        /// <summary>
-        /// </summary>
-        /// <returns>
-        /// </returns>
+        #region METHODS
+
         public async Task<IEnumerable<Bitmap>> LoadImagesAsync()
         {
             var folderPicker = new FolderPicker();
@@ -56,5 +46,12 @@ namespace GlyphRecognition.Services
 
             return bitmaps;
         }
+
+        public Task<Bitmap> CaptureImageAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }
