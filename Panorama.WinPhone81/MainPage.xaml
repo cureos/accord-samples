@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Panorama.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="MainPage_OnLoaded" >
+
+    <Grid>
+        <Image x:Name="PictureBox"/>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" >
+            <AppBarButton Label="Blend" Click="BtnBlend_OnClick">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Trim"></SymbolIcon>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="RANSAC" Click="BtnRansac_OnClick">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Filter"></SymbolIcon>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Correlation" Click="BtnCorrelation_OnClick">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Link"></SymbolIcon>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Label="Harris" Click="BtnHarris_OnClick">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Sort"></SymbolIcon>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
