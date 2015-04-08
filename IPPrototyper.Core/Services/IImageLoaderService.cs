@@ -13,8 +13,6 @@ namespace IPPrototyper.Core.Services
 
         Task<IEnumerable<Bitmap>> LoadImagesAsync();
 
-        Task<Bitmap> CaptureImageAsync();
-
         #endregion
     }
 }

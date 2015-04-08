@@ -99,7 +99,10 @@ namespace IPPrototyper.Core.ViewModels
             {
                 this.selectedOriginalImage = value;
                 this.RaisePropertyChanged(() => this.SelectedOriginalImage);
-                this.DisplayedImage = this.SelectedOriginalImage;
+                if (this.selectedOriginalImage != null)
+                {
+                    this.DisplayedImage = this.selectedOriginalImage;
+                }
             }
         }
 
@@ -113,7 +116,10 @@ namespace IPPrototyper.Core.ViewModels
             {
                 this.selectedProcessedImage = value;
                 this.RaisePropertyChanged(() => this.SelectedProcessedImage);
-                this.DisplayedImage = this.SelectedProcessedImage.Value;
+                if (this.selectedProcessedImage.Value != null)
+                {
+                    this.DisplayedImage = this.selectedProcessedImage.Value;
+                }
             }
         }
 

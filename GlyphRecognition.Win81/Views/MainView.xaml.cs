@@ -1,3 +1,6 @@
+// Copyright (c) 2014-2015 Anders Gustafsson, Cureos AB.
+// All rights reserved.
+
 namespace IPPrototyper.Views
 {
     using Windows.UI.Xaml.Controls;

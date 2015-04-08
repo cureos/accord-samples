@@ -5,12 +5,56 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:Cirrious.MvvmCross.WindowsCommon.Views"
-    mc:Ignorable="d">
+    xmlns:converters="using:GlyphRecognition.Converters"
+    mc:Ignorable="d"
+    Loaded="MainViewOnLoaded">
 
+    <views:MvxWindowsPage.Resources>
+        <converters:BitmapToImageSourceConverter x:Key="BitmapToImageSourceConverter" />
+        <Style TargetType="ListBox">
+            <Setter Property="Margin" Value="6,0,6,6"></Setter>
+        </Style>
+        <Style TargetType="ScrollViewer">
+            <Setter Property="Margin" Value="6"></Setter>
+        </Style>
+    </views:MvxWindowsPage.Resources>
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel>
-            <TextBox Text="{Binding Hello, Mode=TwoWay}" />
-            <TextBlock Text="{Binding Hello}" />
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="OriginalImagesSelector" Grid.Row="0" 
+                  ItemsSource="{Binding OriginalImages, Mode=TwoWay}" 
+                  SelectedItem="{Binding SelectedOriginalImage, Mode=TwoWay}" 
+                  SelectionChanged="OriginalImagesOnSelectionChanged"
+                  PlaceholderText="Select original image" Visibility="Collapsed">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Height="30" Source="{Binding Converter={StaticResource BitmapToImageSourceConverter}}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox x:Name="ProcessedImagesSelector" Grid.Row="1" 
+                  ItemsSource="{Binding ProcessedImages}" 
+                  SelectedItem="{Binding SelectedProcessedImage, Mode=TwoWay}"
+                  PlaceholderText="Select processed image" Visibility="Collapsed">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Height="30" Source="{Binding Value, Converter={StaticResource BitmapToImageSourceConverter}}"/>
+                        <TextBlock Text="{Binding Key}" FontSize="12" Margin="6,0" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Image Grid.Row="2" Stretch="Uniform" 
+               Source="{Binding DisplayedImage, Converter={StaticResource BitmapToImageSourceConverter}}"/>
+        <ScrollViewer Grid.Row="3" VerticalScrollMode="Auto" HorizontalScrollMode="Auto" >
+            <TextBlock Text="{Binding Log}" FontSize="12"/>
+        </ScrollViewer>
     </Grid>
 </views:MvxWindowsPage>

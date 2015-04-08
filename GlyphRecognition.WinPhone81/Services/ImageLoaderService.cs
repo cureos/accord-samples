@@ -11,7 +11,6 @@ namespace GlyphRecognition.Services
     using IPPrototyper.Core.Services;
 
     using Windows.Storage;
-    using Windows.Storage.Pickers;
     using Windows.UI.Xaml.Media.Imaging;
 
     public class ImageLoaderService : IImageLoaderService
@@ -20,18 +19,12 @@ namespace GlyphRecognition.Services
 
         public async Task<IEnumerable<Bitmap>> LoadImagesAsync()
         {
-            var folderPicker = new FolderPicker();
-            folderPicker.FileTypeFilter.Add(".bmp");
-            folderPicker.FileTypeFilter.Add(".jpg");
-            folderPicker.FileTypeFilter.Add(".jpeg");
-            folderPicker.FileTypeFilter.Add(".png");
-
-            var selectedFolder = await folderPicker.PickSingleFolderAsync();
-            var selectedFiles = await selectedFolder.GetFilesAsync();
-
             var bitmaps = new List<Bitmap>();
-            foreach (var file in selectedFiles)
+            for (var i = 11; i <= 20; ++i)
             {
+                var uri = new Uri(string.Format("ms-appx:///Images/{0}.jpg", i));
+                var file = await StorageFile.GetFileFromApplicationUriAsync(uri);
+
                 var stream = await file.OpenAsync(FileAccessMode.Read);
                 try
                 {
