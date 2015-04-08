@@ -19,7 +19,7 @@ Distributed under the Lesser GNU Public License, LGPL, version 3.0 (Accord.NET s
 
 ### Image stitching
 
-Windows Phone Silverlight 8 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
+Windows Phone 8.1 adaptation of César's [image stitching sample application on CodeProject](http://www.codeproject.com/Articles/95453/Automatic-Image-Stitching-with-Accord-NET).
 
 ![Image stitching sample](/Files/panorama.png)
 
@@ -31,7 +31,6 @@ Apps for these platforms:
 
 * Android
 * iOS
-* Windows Phone 8 Silverlight
 * Windows 8.1
 * Windows Phone 8.1 (non-Silverlight)
 
@@ -65,9 +64,11 @@ Android adaptation of the *Wavelets Transform*  from Accord.NET.
 
 ### Glyph recognition
 
-Windows 8.1 adaptation of the glyph recognition prototype in Andrew Kirillow's [GRATF](http://www.aforgenet.com/projects/gratf/) project, including a PCL/Windows 8.1 adaptation of the Image Processing Prototyper application from the *AForge.NET Framework*.
+Windows 8.1 and Windows Phone 8.1 adaptations of the glyph recognition prototype in Andrew Kirillow's [GRATF](http://www.aforgenet.com/projects/gratf/) project, including a PCL/Windows 8.1 adaptation of the Image Processing Prototyper application from the *AForge.NET Framework*.
 
 ![Glyph recognition sample](/Files/glyph.png)
+
+![Glyph recognition sample for Phone](/Files/glyph-phone.png)
 
 ## Notes on commercial use
 
