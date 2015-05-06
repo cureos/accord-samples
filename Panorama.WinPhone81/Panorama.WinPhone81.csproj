@@ -119,58 +119,48 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Accord, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.core.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Accord.Imaging, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.imaging.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.Imaging.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Accord.MachineLearning, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.machinelearning.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.MachineLearning.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Accord.Math, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.math.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.Math.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Accord.Statistics, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.statistics.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.Statistics.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Accord.Vision, Version=2.14.4.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.vision.2.14.4.50319\lib\portable-net45+netcore45+wpa81\Accord.Vision.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.aforge.core.2.2.5.50319\lib\portable-win81+wpa81\AForge.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.aforge.imaging.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.Imaging.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.aforge.math.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.Math.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="AForge.Vision, Version=2.2.5.0, Culture=neutral, PublicKeyToken=b612fa915eefaa06, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.aforge.vision.2.2.5.50319\lib\portable-net45+netcore45+wpa81\AForge.Vision.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Shim, Version=1.0.1.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.1.0.1.50407\lib\portable-win81+wpa81\Shim.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Shim.Drawing, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a7d03c0bc8d64dbc, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.drawing.2.2.5.50331\lib\portable-win81+wpa81\Shim.Drawing.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>..\packages\portable.accord.core.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Accord.Imaging">
+      <HintPath>..\packages\portable.accord.imaging.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning">
+      <HintPath>..\packages\portable.accord.machinelearning.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>..\packages\portable.accord.math.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>..\packages\portable.accord.statistics.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.Statistics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Accord.Vision">
+      <HintPath>..\packages\portable.accord.vision.2.15.0.50504\lib\portable-net45+netcore45+wpa81\Accord.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>..\packages\portable.aforge.core.2.2.5.50504\lib\portable-win81+wpa81\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\packages\portable.aforge.imaging.2.2.5.50504\lib\portable-net45+netcore45+wpa81\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>..\packages\portable.aforge.math.2.2.5.50504\lib\portable-net45+netcore45+wpa81\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision">
+      <HintPath>..\packages\portable.aforge.vision.2.2.5.50504\lib\portable-net45+netcore45+wpa81\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="Shim">
+      <HintPath>..\packages\shim.1.0.1.50427\lib\portable-win81+wpa81\Shim.dll</HintPath>
+    </Reference>
+    <Reference Include="Shim.Drawing">
+      <HintPath>..\packages\shim.drawing.2.2.5.50504\lib\portable-win81+wpa81\Shim.Drawing.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
