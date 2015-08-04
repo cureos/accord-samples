@@ -124,31 +124,31 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Accord, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.core.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.dll</HintPath>
+      <HintPath>..\packages\portable.accord.core.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Accord.Imaging, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.imaging.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.Imaging.dll</HintPath>
+      <HintPath>..\packages\portable.accord.imaging.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.Imaging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Accord.MachineLearning, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.machinelearning.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.MachineLearning.dll</HintPath>
+      <HintPath>..\packages\portable.accord.machinelearning.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.MachineLearning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Accord.Math, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.math.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.Math.dll</HintPath>
+      <HintPath>..\packages\portable.accord.math.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.Math.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Accord.Statistics, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.statistics.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.Statistics.dll</HintPath>
+      <HintPath>..\packages\portable.accord.statistics.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.Statistics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Accord.Vision, Version=3.0.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
-      <HintPath>..\packages\portable.accord.vision.3.0.2.50802\lib\portable-net45+netcore45+wpa81\Accord.Vision.dll</HintPath>
+      <HintPath>..\packages\portable.accord.vision.3.0.2.50804\lib\portable-net45+netcore45+wpa81\Accord.Vision.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Shim, Version=1.0.1.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.1.0.1.50512\lib\portable-win81+wpa81\Shim.dll</HintPath>
+      <HintPath>..\packages\shim.1.0.1.50804\lib\portable-win81+wpa81\Shim.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Shim.Drawing">
