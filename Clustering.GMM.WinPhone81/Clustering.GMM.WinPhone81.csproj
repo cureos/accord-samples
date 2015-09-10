@@ -139,8 +139,8 @@
     <Reference Include="OxyPlot.WindowsUniversal">
       <HintPath>..\packages\OxyPlot.WindowsUniversal.2015.1.804-alpha\lib\portable-windows8+wpa81\OxyPlot.WindowsUniversal\OxyPlot.WindowsUniversal.dll</HintPath>
     </Reference>
-    <Reference Include="Shim, Version=1.0.1.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
-      <HintPath>..\packages\shim.1.0.1.50804\lib\portable-win81+wpa81\Shim.dll</HintPath>
+    <Reference Include="Shim, Version=1.0.2.0, Culture=neutral, PublicKeyToken=c55ec16d10c4b366, processorArchitecture=MSIL">
+      <HintPath>..\packages\shim.1.0.2.50909\lib\portable-win81+wpa81\Shim.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
