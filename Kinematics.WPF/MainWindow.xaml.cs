@@ -6,15 +6,16 @@
 //   
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
+
 namespace Kinematics.WPF
 {
     using System;
     using System.Windows;
     using System.Windows.Threading;
 
+    using Accord.Math;
     using Accord.Math.Kinematics;
-
-    using AForge.Math;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml

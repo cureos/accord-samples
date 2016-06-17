@@ -32,7 +32,7 @@ namespace Corners.SURF
 
             using (var stream = await file.OpenReadAsync())
             {
-                this.lenna = (Bitmap)Image.FromStream(stream.AsStreamForRead());
+                this.lenna = (Bitmap)System.Drawing.Image.FromStream(stream.AsStreamForRead());
             }
 
             this.LenaImage.Source = (BitmapSource)this.lenna;

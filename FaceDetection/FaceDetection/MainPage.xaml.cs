@@ -33,7 +33,7 @@ namespace FaceDetection
         {
             InitializeComponent();
 
-            var assembly = ShimAssembly.GetExecutingAssembly();
+            var assembly = Assembly_.GetExecutingAssembly();
             using (var stream = assembly.GetManifestResourceStream("FaceDetection.Images.judybats.jpg"))
             {
                 this.ImageView.Source = this.GetImageSourceFromStream(stream);
@@ -92,10 +92,11 @@ namespace FaceDetection
             {
                 var marker = new RectanglesMarker(objects, Color.FromArgb(0xff, 0xff, 0x00, 0xff));
 
-                var stream = new MemoryStream();
-                marker.Apply(this.bitmap).Save(stream, ImageFormat.Jpeg);
-
-                this.ImageView.Source = this.GetImageSourceFromStream(stream);
+                using (var stream = new MemoryStream())
+                {
+                    marker.Apply(this.bitmap).Save(stream, ImageFormat.Jpeg);
+                    this.ImageView.Source = this.GetImageSourceFromStream(stream);
+                }
             }
         }
 
@@ -108,6 +109,7 @@ namespace FaceDetection
             this.imageSourceStream = new MemoryStream();
             stream.Seek(0, SeekOrigin.Begin);
             stream.CopyTo(this.imageSourceStream);
+            stream.Flush();
 
             return ImageSource.FromStream(
                 () =>

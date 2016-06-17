@@ -14,8 +14,6 @@ namespace Wavelets
     using Accord.Imaging.Filters;
     using Accord.Math.Wavelets;
 
-    using AForge.Imaging.Filters;
-
     using Android.App;
     using Android.Graphics;
     using Android.OS;

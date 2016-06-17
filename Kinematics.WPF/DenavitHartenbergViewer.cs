@@ -7,6 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+
 namespace Kinematics.WPF
 {
     using System;
@@ -17,9 +18,8 @@ namespace Kinematics.WPF
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
 
+    using Accord.Math;
     using Accord.Math.Kinematics;
-
-    using AForge.Math;
 
     using Color = System.Windows.Media.Color;
     using FontFamily = System.Windows.Media.FontFamily;

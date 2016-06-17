@@ -8,11 +8,10 @@ namespace Panorama
     using System.Drawing.Imaging;
     using System.IO;
 
+    using Accord;
     using Accord.Imaging;
     using Accord.Imaging.Filters;
     using Accord.Math;
-
-    using AForge;
 
     using Windows.ApplicationModel;
     using Windows.UI.Xaml;
@@ -92,13 +91,13 @@ namespace Panorama
             var file = await folder.GetFileAsync("UFSCar_Lake1.png");
             using (var stream = await file.OpenReadAsync())
             {
-                this.img1 = ((Bitmap)Image.FromStream(stream.AsStreamForRead())).Clone(PixelFormat.Format24bppRgb);
+                this.img1 = ((Bitmap)System.Drawing.Image.FromStream(stream.AsStreamForRead())).Clone(PixelFormat.Format24bppRgb);
             }
 
             file = await folder.GetFileAsync("UFSCar_Lake2.png");
             using (var stream = await file.OpenReadAsync())
             {
-                this.img2 = ((Bitmap)Image.FromStream(stream.AsStreamForRead())).Clone(PixelFormat.Format24bppRgb);
+                this.img2 = ((Bitmap)System.Drawing.Image.FromStream(stream.AsStreamForRead())).Clone(PixelFormat.Format24bppRgb);
             }
 
             // Concatenate and show entire image at start
